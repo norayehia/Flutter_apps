@@ -1,0 +1,288 @@
+
+flutterinstall
+java
+https://www.oracle.com/java/technologies/downloads/#java8-windows
+
+
+https://blogs.ashrithgn.com/install-flutter-on-windows-10/
+
+
+.................................................................................
+https://hastebin.com/raw/hoyuxupoje
+
+..........................................................................................................makemlflutte
+1_page model
+stflwifget with listview 
+
+.............................................
+2_ go to tfli package
+dependencies:
+  tflite: ^1.1.2
+
+
+
+
+https://pub.dev/packages/tflite/install
+
+
+imgpicker package
+
+https://pub.dev/packages/image_picker
+
+dependencies:
+  image_picker: ^0.8.5+3
+
+.............................................
+3_go to model dart
+in scaffld make
+,,,,,,,,1 fliating action button to work img picker 
+2insided it in onpressd funcation pick img
+
+4_in asset put model and label
+
+,,,,,,,,,,5_before build put init function,load model function to work on tat model
+
+
+6_creATE CLASSFICATION FUNCATION,Setstate funcation to use that model to clssfy 
+
+
+7_conyainer to show img when choose it ,,singlscrolvew to show result after it
+
+..........................................ecomerceapp
+1_splachscreen
+2_homepage
+3_productpage
+4_add to card
+5_verios products
+6_login,register
+7_user authentication 
+8_user addes from google map
+9_track order 
+10_shopping cart
+11_firebase notifcation
+12_payment
+13_newproduct in backend
+14_update order status
+
+
+........
+Iterable<int> countDownFromSync(int num) sync* {
+  while (num > 0 && num <= 7) {
+    yield num++;
+  }
+}
+
+
+in main
+
+
+print("getting iterable");
+  Iterable<int> sequence = countDownFromSync(7);
+  print("start");
+  for (int value in sequence) {
+    if (value % 2 == 0) {
+      print(value);
+    }
+  }
+
+.......................todoap(userinterface,taskmodel,sqflitedatabas,statmanagemenrt of provider)
+main>theme,coor,material
+home>column,2expanded
+
+//////////////////////////////////////////////////////////////////////////////////////////////////records
+https://www.nintyzeros.com/2021/01/flutter-login-signup.html
+https://docs.flutter.dev/cookbook/persistence/sqlite
+
+////////////////////////////////////////////////////////////////////////////////////////////////////firebase ecommerce app
+1go to google search firebase
+https://firebase.google.com/
+
+gotoconsole button
+
+2name of project
+esshop
+
+https://console.firebase.google.com/project/esshop-d63f8/overview
+
+3_then in yourproject in androidfolder>id com.name.>> applicationId "com.nora.eshop"
+4_then click on android in firebase to register it type this id in 
+5_then download google servics json file >>>then put it in android\app in your project 
+6_then next next to finsh register this android
+.......https://console.firebase.google.com/project/esshop-d63f8/authentication
+7_enable in authentcation pass,email
+8_https://console.firebase.google.com/project/esshop-d63f8/firestore
+cret database leave the default productionmode
+
+9_https://console.firebase.google.com/project/esshop-d63f8/firestore/rules>>in rule in firestore and also storage put (if true) publish
+
+10_run app now
+..11 splashscreen
+>create statful widget splachscreen ....>inside it initetstate
+>then in main put instance of firebase to show this after user login >instance from class ecomerce in config folder
+12 in authentcation folder
+authentcat.dart>>appbar with tabbar login ,register
+
+run yor app to see
+
+13 register page
+new project eapp same steps above
+https://console.firebase.google.com/project/e-app-f22bd/overview
+>make firebaseproject then flutterproject then take the id from build gradle in androidapp folder
+
+14 registerpage
+
+
+
+
+
+
+pickimg>https://educity.app/flutter/how-to-pick-an-image-from-gallery-and-display-it-in-flutter
+
+imgfirebase>https://www.youtube.com/watch?v=3x92z0oHbtY
+file error>https://www.androidbugfix.com/2021/12/the-name-is-defined-in-libraries-and.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Errors 
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,https://stackoverflow.com/questions/64425132/how-to-fix-flutter-warning-your-flutter-application-is-created-using-an-older-v
+android:name="io.flutter.app.FlutterApplication"
+        android:label="e_shop"
+        android:icon="@mipmap/ic_launcher"
+,,,,,,,
+
+
+cupertino_icons: ^0.1.2
+  #cloud_firestore: ^0.13.2+1
+  #firebase_auth: ^0.15.4
+  cloud_firestore: ^3.3.0
+  firebase_auth: ^3.4.2
+
+
+  shared_preferences: ^0.5.6+1
+  fluttertoast: ^3.1.3
+  image_picker: ^0.6.3+1
+  #firebase_storage: ^3.1.1
+  firebase_storage: ^10.3.2
+  flutter_staggered_grid_view: ^0.3.0
+  provider: ^4.0.4
+  #path_provider: ^0.5.0+1
+  path_provider: ^2.0.11
+  image: ^2.0.7
+  flutter_plugin_android_lifecycle: ^1.0.2
+  intl:
+
+
+  cloud_firestore: ^3.3.0
+  firebase_auth: ^3.4.2
+  cupertino_icons: ^1.0.5
+  shared_preferences: ^2.0.15
+  fluttertoast: ^8.0.9
+  image_picker: ^0.8.5
+  firebase_storage: ^10.3.2
+  flutter_staggered_grid_view: ^0.6.2
+  provider: ^6.0.3
+  path_provider: ^2.0.11
+  image: ^3.1.0
+  flutter_plugin_android_lifecycle: ^2.0.1
+  intl:
+
+
+
+
+Future getMembers() async {
+    var firestore = FirebaseFirestore.instance;
+    QuerySnapshot querySnapshot = await firestore.collection("Members").get();
+    final documents = querySnapshot.docs;
+    return documents
+}
+
+
+
+......to solve my erros
+https://firebase.flutter.dev/docs/firestore/usage/
+https://stackoverflow.com/questions/66074658/undefined-name-firestore-flutter
+https://stackoverflow.com/questions/63482162/undefined-class-firebaseuser
+https://stackoverflow.com/questions/66074658/undefined-name-firestore-flutter
+https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects
+..https://www.youtube.com/watch?v=Qu7afHmErAs
+https://stackoverflow.com/questions/67884326/requires-your-app-to-be-migrated-to-the-android-embedding-v2-how-to-solve
+
+https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects
+
+https://stackoverflow.com/questions/64425132/how-to-fix-flutter-warning-your-flutter-application-is-created-using-an-older-v
+
+................................................................................................................
+task1
+https://github.com/ilagazo/Flutter_UserProfile/blob/master/lib/pages/edit_image.dart
+https://www.youtube.com/watch?v=ZfSiFtT0z_I
+https://docs.flutter.dev/development/ui/assets-and-images
+https://stackoverflow.com/questions/49991444/create-a-rounded-button-button-with-border-radius-in-flutter
+https://www.javatpoint.com/flutter-buttons
+https://stackoverflow.com/questions/50535185/right-to-left-rtl-in-flutter
+https://api.flutter.dev/flutter/widgets/SizedBox-class.html
+https://www.kindacode.com/article/customize-borders-of-textfield-textformfield-in-flutter/
+https://api.flutter.dev/flutter/widgets/Text-class.html
+https://stackoverflow.com/questions/49500999/image-in-widget-flutter
+....................................................................................................................
+https://www.flutterbeads.com/change-textfield-background-color-in-flutter/
+
+................................................................................................................task2grocyapp
+https://www.inettutor.com/programming-tutorial/flutter/fruit-grocery-app-in-flutter-free-source-code/
+https://github.com/0xcm1k3/groceries_flutter_templete/tree/master/lib/screens
+
+ سيشن امبارح اترفعت 
+
+الكود  :
+https://github.com/AhmedAbogameel/nectar
+الديزين :
+https://www.figma.com/file/lKUHFSkl9au2NkyhUN3SCK/Online-Groceries-App-UI-(Community)?node-id=1%3A2
+
+,,,,,,,
+https://codesource.io/build-a-whatsapp-ui-clone-application-with-flutter/
+
+
+https://codesource.io/build-a-whatsapp-ui-clone-application-with-flutter/
+
+
+......................................................................................................................................................................
+flutter shapes//
+
+https://blog.logrocket.com/drawing-shapes-in-flutter-with-custompaint-and-shape-maker/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
